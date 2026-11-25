@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#F8F6F1" />
+    <title>TouristCare · Offline safety guidance</title>
+    <style>
+      :root { color-scheme: light; font-family: system-ui, sans-serif; background: #F8F6F1; color: #172B3A; }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 22px; }
+      main { width: min(100%, 520px); padding: 26px; border: 1px solid #E9DFD0; border-radius: 20px; background: #fff; box-shadow: 0 12px 36px #172b3a12; }
+      .mark { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 13px; background: #172B3A; color: #fff; font-weight: 800; }
+      h1 { margin: 20px 0 8px; font-size: 26px; }
+      p, li { color: #626e73; line-height: 1.55; }
+      .call { display: block; margin: 18px 0; padding: 15px; border-radius: 13px; background: #F5E9E1; color: #172B3A; font-weight: 800; text-align: center; text-decoration: none; }
+      .notice { padding: 12px; border-left: 3px solid #E58B72; background: #FBF7F1; font-size: 13px; }
+      button { min-height: 46px; width: 100%; margin-top: 12px; border: 0; border-radius: 11px; background: #172B3A; color: #fff; font: inherit; font-weight: 700; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="mark" aria-label="TouristCare">TC</div>
+      <h1>You’re offline</h1>
+      <p>TouristCare needs an internet connection to send reports, share your location, or contact support. These steps may help while you reconnect:</p>
+      <ul>
+        <li>Move to a public, well-lit place and ask a trusted person nearby for help.</li>
+        <li>If you are in immediate danger in South Africa, call <strong>112</strong> from a mobile phone.</li>
+        <li>For urgent medical needs, contact local emergency services directly.</li>
+      </ul>
+      <a class="call" href="tel:112">Call 112</a>
+      <p class="notice">TouristCare does not automatically dispatch emergency responders. Offline reports and location sharing are not sent.</p>
+      <button onclick="location.reload()">Try TouristCare again</button>
+    </main>
+  </body>
+</html>
